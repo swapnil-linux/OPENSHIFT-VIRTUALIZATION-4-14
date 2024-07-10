@@ -14,6 +14,7 @@ vim  subscription.yml
 oc apply -f subscription.yml
 oc get sub,installplan,csv -n openshift-cnv
 vim hcooperator.yml
+sleep 30
 oc apply -f hcooperator.yml
 
 
